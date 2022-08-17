@@ -1,0 +1,235 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+/***********************************************
+  $variables
+***********************************************/
+:root {
+  --main-one: #97d9e1;
+  --main-two: #d9afd9;
+  --white: #ffffff;
+  --black: #000000;
+  --dark-gray: rgb(81, 81, 81);;
+}
+/***********************************************
+  $reset
+***********************************************/
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: var(--color-text-main);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  line-height: 1;
+}
+
+img,
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+input,
+textarea,
+button {
+  font-size: inherit;
+  font-family: inherit;
+  color: inherit;
+}
+
+/***********************************************
+  $page layout and styles.
+***********************************************/
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(90deg, var(--main-two), var(--main-one));
+}
+
+.container {
+  width: 60%;
+  height: 85vh;
+  padding: 2rem;
+  /* box-shadow: 0px 5px 5px 0px #fff; */
+  background-color: white;
+  border-radius: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+
+.container .header {
+  width: 100%;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: space-between;
+  font-size: larger;
+  font-family: "Poppins", sans-serif;
+}
+
+.container .header .category-span,
+.container .header .questions-count-span {
+  margin-left: 0.3rem;
+  color: var(--dark-gray);
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.container .main-content {
+  width: 100%;
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.container .main-content .questions {
+  width: 100%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.container .main-content .questions .question {
+  width: 100%;
+  height: 100%;
+  padding: 2rem;
+  font-family: "Poppins", sans-serif;
+  border-radius: 2rem;
+  border: 2px solid var(--dark-gray);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  display: none;
+}
+
+.container .main-content .questions .question.active {
+  display: flex;
+}
+
+.container .main-content .questions .question .question-text {
+  color: var(--dark-gray);
+  font-size: x-large;
+  margin-bottom: 3rem;
+}
+
+.container .main-content .questions .question .choice {
+  width: 30%;
+  height: 7vh;
+  line-height: 5vh;
+  padding: 0 1.5rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  font-size: large;
+  color: var(--dark-gray);
+  border: 1px solid var(--dark-gray);
+  cursor: pointer;
+  border-radius: 2rem;
+}
+
+.container .main-content .questions .question .choice:hover,
+.container .main-content .questions .question .choice:focus,
+.container .main-content .questions .question .choice.selected {
+  background-color: var(--main-one);
+  color: var(--white);
+  font-weight: bold;
+}
+
+.container .main-content .questions .buttons {
+  width: 100%;
+  height: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-bottom: 3rem;
+}
+
+.container .main-content .questions .buttons button {
+  position: absolute;
+  width: 20%;
+  height: 2.5rem;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 2rem;
+  background-color: var(--dark-gray);
+  color: var(--white);
+  font-weight: bold;
+  cursor: pointer;
+  opacity: 0.9;
+}
+
+.container .main-content .questions .buttons button:hover,
+.container .main-content .questions .buttons button:focus {
+  opacity: 1;
+  box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, .2);
+}
+
+.container .main-content .dots-and-timer {
+  width: 100%;
+  height: 6rem;
+  padding: 1rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container .main-content .dots-and-timer .dots {
+  width: 50%;
+  height: 1.8rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container .main-content .dots-and-timer .dots .dot {
+  width: 7%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #eee;
+}
+
+.container .main-content .dots-and-timer .dots .dot.active {
+  background-color: var(--main-two);
+}
+
+.container .main-content .dots-and-timer .timer {
+  font-weight: bold;
+  font-size: larger;
+  color: var(--dark-gray);
+  font-family: "Poppins", sans-serif;
+}
