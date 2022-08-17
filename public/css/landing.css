@@ -88,3 +88,19 @@ main.container form .choose {
     color: var(--text-color);
     font-family: var(--main-fontFamily);
 }
+
+
+/* Validation style */
+
+.error-star{
+    color :red ; 
+    font-size : 20px ;
+}
+
+small{
+    color :red ;
+    font-size : 10px;
+    width : 90% ;
+    text-align: left;
+    display: none;
+}
