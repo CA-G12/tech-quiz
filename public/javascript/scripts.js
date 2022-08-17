@@ -53,6 +53,27 @@ const showSubmitButton = () => {
   }
 };
 
+const timer = () => {
+  const minutes = document.querySelector('.timer .minutes');
+  const seconds = document.querySelector('.timer .seconds');
+  setInterval(() => {
+    let newSeconds = parseInt(seconds.textContent, 10);
+    newSeconds += 1;
+    if (String(newSeconds).length === 1) {
+      seconds.textContent = `0${newSeconds}`;
+    }
+  }, 1000);
+  setInterval(() => {
+    let newMinutes = parseInt(minutes.textContent, 10);
+    newMinutes += 1;
+    if (String(newMinutes).length === 1) {
+      minutes.textContent = `0${newMinutes}`;
+    }
+  }, 60000);
+};
+
+timer();
+
 fetch('/quiz')
   .then((jsonData) => jsonData.json())
   .then((array) => () => {
