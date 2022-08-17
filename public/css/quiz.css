@@ -61,7 +61,7 @@ button {
 }
 
 /***********************************************
-  $page layout
+  $page layout and styles.
 ***********************************************/
 body {
   width: 100%;
@@ -220,6 +220,7 @@ body {
   width: 7%;
   height: 100%;
   border-radius: 50%;
+  background-color: #eee;
 }
 
 .container .main-content .dots-and-timer .dots .dot.active {
