@@ -1,80 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" href="quiz.ico" type="image/x-icon">
-  <link rel="stylesheet" href="/public/css/landing.css">
-  <title>Tech Quiz</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="quiz.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/public/css/landing.css">
+    <title>Tech Quiz</title>
 </head>
+
 <body>
-  <main class="container">
-    <h1> Take a Quiz </h1>
-    <form action="" method=""> 
-        <div class="category-container">
-            <h4>Choose Category :</h4>
-            <div class="chooses">
-                <div class="choose">
-                    <input id="HTML" type="radio" name="category" value="HTML">
-                    <label for="HTML">HTML</label>
-                </div>
-                <div class="choose">
-                    <input id="JavaScript" type="radio" name="category" value="JavaScript">
-                    <label for="JavaScript">JavaScript</label>
-                </div>
-                <div class="choose">
-                    <input id="BASH" type="radio" name="category" value="BASH">
-                    <label for="BASH">BASH</label>
-                </div>
-                <div class="choose">
-                    <input id="Linux" type="radio" name="category" value="Linux">
-                    <label for="Linux">Linux</label>
-                </div>
-                <div class="choose">
-                    <input id="MySQL" type="radio" name="category" value="MySQL">
-                    <label for="MySQL">MySQL</label>
-                </div>
-                <div class="choose">
-                    <input id="DevOps" type="radio" name="category" value="DevOps">
-                    <label for="DevOps">DevOps</label>
-                </div>
-                <div class="choose">
-                    <input id="WordPress" type="radio" name="category" value="WordPress">
-                    <label for="WordPress">WordPress</label>
-                </div>
-                <div class="choose">
-                    <input id="Kubernetes" type="radio" name="category" value="Kubernetes">
-                    <label for="Kubernetes">Kubernetes</label>
-                </div>
-                <div class="choose">
-                    <input id="Docker" type="radio" name="category" value="Docker">
-                    <label for="Docker">Docker</label>
-                </div>
-            </div>
-        </div>
+    <main class="container">
+        <h1> Take a Quiz </h1>
+        <form action="/quiz" method="get">
+            <section class="category-container">
+                <h4>Choose Category :</h4>
+                <div class="chooses">
+                    <div class="choose">
+                        <input id="HTML" type="radio" name="category" value="HTML">
+                        <label for="HTML">HTML</label>
+                    </div>
+                    <div class="choose">
+                        <input id="JavaScript" type="radio" name="category" value="JavaScript">
+                        <label for="JavaScript">JavaScript</label>
+                    </div>
+                    <div class="choose">
+                        <input id="BASH" type="radio" name="category" value="BASH">
+                        <label for="BASH">BASH</label>
+                    </div>
+                    <div class="choose">
+                        <input id="Linux" type="radio" name="category" value="Linux">
+                        <label for="Linux">Linux</label>
+                    </div>
+                    <div class="choose">
+                        <input id="MySQL" type="radio" name="category" value="MySQL">
+                        <label for="MySQL">MySQL</label>
+                    </div>
+                    <div class="choose">
+                        <input id="DevOps" type="radio" name="category" value="DevOps">
+                        <label for="DevOps">DevOps</label>
+                    </div>
+                    <div class="choose">
+                        <input id="WordPress" type="radio" name="category" value="WordPress">
+                        <label for="WordPress">WordPress</label>
+                    </div>
+                    <div class="choose">
+                        <input id="Kubernetes" type="radio" name="category" value="Kubernetes">
+                        <label for="Kubernetes">Kubernetes</label>
+                    </div>
+                    <div class="choose">
+                        <input id="Docker" type="radio" name="category" value="Docker">
+                        <label for="Docker">Docker</label>
+                    </div>
+            </section>
+            </section>
 
-        <div class="Difficulty-container">
-            <h4>Choose Difficulty :</h4>
-            <div class="chooses">
-                <div class="choose">
-                    <input id="Easy" type="radio" name="Difficulty" value="Easy">
-                    <label for="Easy">Easy</label>
-                </div>
-                <div class="choose">
-                    <input id="Medium" type="radio" name="Difficulty" value="Medium">
-                    <label for="Medium">Medium</label>
-                </div>
-                <div class="choose">
-                    <input id="Hard" type="radio" name="Difficulty" value="Hard">
-                    <label for="Hard">Hard</label>
-                </div>
-            </div>
-        </div>
-        <button class="start-button">Start Quiz</button>
-    </form>
-</main>
+            <section class="Difficulty-container">
+                <h4>Choose Difficulty :</h4>
+                <section class="chooses">
+                    <div class="choose">
+                        <input id="Easy" type="radio" name="difficulty" value="Easy">
+                        <label for="Easy">Easy</label>
+                    </div>
+                    <div class="choose">
+                        <input id="Medium" type="radio" name="difficulty" value="Medium">
+                        <label for="Medium">Medium</label>
+                    </div>
+                    <div class="choose">
+                        <input id="Hard" type="radio" name="difficulty" value="Hard">
+                        <label for="Hard">Hard</label>
+                    </div>
+                </section>
+            </section>
+            <button class="start-button">Start Quiz</button>
+        </form>
+    </main>
 
-  <script src="/public/javascript/scripts.js"></script>
+    <script src="/public/javascript/scripts.js"></script>
 </body>
+
 </html>
