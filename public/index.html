@@ -13,9 +13,9 @@
 <body>
     <main class="container">
         <h1> Take a Quiz </h1>
-        <form action="/quiz" method="get">
+        <form class="quiz-form" action="/quiz" method="get" onsubmit="return true">
             <section class="category-container">
-                <h4>Choose Category :</h4>
+                <h4>Choose Category :<span class="error-star">*</span></h4>
                 <div class="chooses">
                     <div class="choose">
                         <input id="HTML" type="radio" name="category" value="HTML">
@@ -55,9 +55,10 @@
                     </div>
             </section>
             </section>
+            <small class="error1">You should choose one.</small>
 
             <section class="Difficulty-container">
-                <h4>Choose Difficulty :</h4>
+                <h4>Choose Difficulty :<span class="error-star">*</span></h4>
                 <section class="chooses">
                     <div class="choose">
                         <input id="Easy" type="radio" name="difficulty" value="Easy">
@@ -73,10 +74,12 @@
                     </div>
                 </section>
             </section>
-            <button class="start-button">Start Quiz</button>
+            <small class="error2">You should choose one.</small>
+            <input class="start-button" value="Start Quiz" type="submit">
         </form>
     </main>
 
+    <script src="/public/javascript/formValidation.js"></script>
     <script src="/public/javascript/scripts.js"></script>
 </body>
 
