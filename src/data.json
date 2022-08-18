@@ -1,1 +1,331 @@
-{"error":"No questions found"}
+[
+  {
+    "id": 723,
+    "question": "Which command is used to create resources in Kubernetes?",
+    "description": null,
+    "answers": {
+      "answer_a": "kubectl create -f ./my-manifest.yaml",
+      "answer_b": "kubectl deploy -f ./my-manifest.yaml",
+      "answer_c": "kubectl apply -f ./my-manifest.yaml",
+      "answer_d": "kubectl fuse -f ./my-manifest.yaml",
+      "answer_e": null,
+      "answer_f": null
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "false",
+      "answer_c_correct": "true",
+      "answer_d_correct": "false",
+      "answer_e_correct": "false",
+      "answer_f_correct": "false"
+    },
+    "correct_answer": "answer_a",
+    "explanation": null,
+    "tip": null,
+    "tags": [
+      {
+        "name": "Kubernetes"
+      }
+    ],
+    "category": "Linux",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 717,
+    "question": "Which command is used to create a deployment in Kubernetes?",
+    "description": null,
+    "answers": {
+      "answer_a": "kubectl run",
+      "answer_b": "kubernetes set deployment",
+      "answer_c": "kubectl deploy",
+      "answer_d": "kubectl apply deployment",
+      "answer_e": null,
+      "answer_f": null
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "true",
+      "answer_b_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false",
+      "answer_e_correct": "false",
+      "answer_f_correct": "false"
+    },
+    "correct_answer": "answer_a",
+    "explanation": null,
+    "tip": null,
+    "tags": [
+      {
+        "name": "Kubernetes"
+      }
+    ],
+    "category": "Linux",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 693,
+    "question": "What are the respective octal value for the permission bits?",
+    "description": null,
+    "answers": {
+      "answer_a": "4, 2 & 1 respectively for r, w & x.",
+      "answer_b": "4, 2 & 1 respectively for w, r & x.",
+      "answer_c": "4, 2 & 1 respectively for x, w & x.",
+      "answer_d": "4, 2 & 1 respectively for r, x & w.",
+      "answer_e": null,
+      "answer_f": null
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "true",
+      "answer_b_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false",
+      "answer_e_correct": "false",
+      "answer_f_correct": "false"
+    },
+    "correct_answer": null,
+    "explanation": null,
+    "tip": null,
+    "tags": [
+      {
+        "name": "BASH"
+      },
+      {
+        "name": "Linux"
+      }
+    ],
+    "category": "Linux",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 682,
+    "question": "Expand JFS in context of file system?",
+    "description": null,
+    "answers": {
+      "answer_a": "Journal File System",
+      "answer_b": "Journal Failing System",
+      "answer_c": "Journal File Service",
+      "answer_d": "Journal Failing Service",
+      "answer_e": null,
+      "answer_f": null
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "true",
+      "answer_b_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false",
+      "answer_e_correct": "false",
+      "answer_f_correct": "false"
+    },
+    "correct_answer": null,
+    "explanation": null,
+    "tip": null,
+    "tags": [
+      {
+        "name": "BASH"
+      }
+    ],
+    "category": "Linux",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 711,
+    "question": "Are arrays supported in shell scripts?",
+    "description": null,
+    "answers": {
+      "answer_a": "True",
+      "answer_b": "False",
+      "answer_c": "Yes but only under certain conditions",
+      "answer_d": null,
+      "answer_e": null,
+      "answer_f": null
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "true",
+      "answer_b_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false",
+      "answer_e_correct": "false",
+      "answer_f_correct": "false"
+    },
+    "correct_answer": null,
+    "explanation": null,
+    "tip": null,
+    "tags": [
+      {
+        "name": "BASH"
+      },
+      {
+        "name": "Linux"
+      }
+    ],
+    "category": "Linux",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 748,
+    "question": "The API server is also known as:",
+    "description": null,
+    "answers": {
+      "answer_a": "kubeapi",
+      "answer_b": "kube-server",
+      "answer_c": "k8s-apiserver",
+      "answer_d": "kube-apiserver",
+      "answer_e": null,
+      "answer_f": null
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "true",
+      "answer_e_correct": "false",
+      "answer_f_correct": "false"
+    },
+    "correct_answer": "answer_a",
+    "explanation": null,
+    "tip": null,
+    "tags": [
+      {
+        "name": "Kubernetes"
+      }
+    ],
+    "category": "Linux",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 657,
+    "question": "Which command can give disk usage summary?",
+    "description": null,
+    "answers": {
+      "answer_a": "chkdsk",
+      "answer_b": "fdisk",
+      "answer_c": "du",
+      "answer_d": "df",
+      "answer_e": null,
+      "answer_f": null
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "false",
+      "answer_c_correct": "true",
+      "answer_d_correct": "false",
+      "answer_e_correct": "false",
+      "answer_f_correct": "false"
+    },
+    "correct_answer": "answer_a",
+    "explanation": null,
+    "tip": null,
+    "tags": [
+      {
+        "name": "BASH"
+      }
+    ],
+    "category": "Linux",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 685,
+    "question": "What is UMASK?",
+    "description": null,
+    "answers": {
+      "answer_a": "UMASK is a Unix environment variable, which automatically sets file permissions created files.",
+      "answer_b": "UMASK is a Unix environment variable, which automatically sets the file visibility.",
+      "answer_c": "UMASK is a Unix environment variable, which not really used anymore and is considered legacy.",
+      "answer_d": "UMASK is a Unix environment variable, which is replaced by the chmod command now however it's still largely used.",
+      "answer_e": null,
+      "answer_f": null
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "true",
+      "answer_b_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false",
+      "answer_e_correct": "false",
+      "answer_f_correct": "false"
+    },
+    "correct_answer": null,
+    "explanation": null,
+    "tip": null,
+    "tags": [
+      {
+        "name": "BASH"
+      },
+      {
+        "name": "Linux"
+      }
+    ],
+    "category": "Linux",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 649,
+    "question": "What is Solaris?",
+    "description": null,
+    "answers": {
+      "answer_a": "HP’s UNIX",
+      "answer_b": "IBM’s UNIX",
+      "answer_c": "Sun microsystems UNIX",
+      "answer_d": "Microsoft’s UNIX",
+      "answer_e": null,
+      "answer_f": null
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "false",
+      "answer_c_correct": "true",
+      "answer_d_correct": "false",
+      "answer_e_correct": "false",
+      "answer_f_correct": "false"
+    },
+    "correct_answer": "answer_a",
+    "explanation": null,
+    "tip": null,
+    "tags": [
+      {
+        "name": "BASH"
+      }
+    ],
+    "category": "Linux",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 716,
+    "question": "An abstraction in kubernetes which defines a logical set of pods and a policy to access them.",
+    "description": null,
+    "answers": {
+      "answer_a": "node",
+      "answer_b": "cluster",
+      "answer_c": "service",
+      "answer_d": "set",
+      "answer_e": null,
+      "answer_f": null
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "false",
+      "answer_c_correct": "true",
+      "answer_d_correct": "false",
+      "answer_e_correct": "false",
+      "answer_f_correct": "false"
+    },
+    "correct_answer": "answer_a",
+    "explanation": "A service is a grouping of pods that are running on the cluster. Services are \"cheap\" and you can have many services within the cluster.",
+    "tip": null,
+    "tags": [
+      {
+        "name": "Kubernetes"
+      }
+    ],
+    "category": "Linux",
+    "difficulty": "Easy"
+  }
+]
