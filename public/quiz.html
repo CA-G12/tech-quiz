@@ -13,7 +13,7 @@
 <body>
   <div class="container">
     <header class="header">
-      <p class="category-para">Category: <span class="category-span">HTML</span></p>
+      <p class="category-para">Category: <span class="category-span"></span></p>
       <p class="questions-count-para">
         Questions count:
         <span class="questions-count-span">10</span>
@@ -25,18 +25,18 @@
           <h1 class="question-text">How to check the current disk usage on Linux?</h1>
           <p class="choice">df</p>
           <p class="choice">usage</p>
-          <p class="choice selected">uptime</p>
+          <p class="choice">uptime</p>
           <p class="choice">free</p>
         </section>
-        <section class="buttons">
-          <button type="button" class="next">Next</button>
-          <button type="button" class="submit">Submit</button>
-        </section>
+      </section>
+      <section class="buttons">
+        <button type="button" class="next">Next</button>
+        <button type="button" class="submit">Submit</button>
       </section>
       <section class="dots-and-timer">
         <section class="dots">
-          <div class="dot"></div>
           <div class="dot active"></div>
+          <div class="dot"></div>
           <div class="dot"></div>
           <div class="dot"></div>
           <div class="dot"></div>
@@ -48,12 +48,12 @@
         </section>
         <h4 class="timer"><span class="minutes">00</span>:<span class="seconds">00</span></h4>
       </section>
-      <section></section>
     </main>
-    <main class="result-container">
-      <!-- result html structure (it will be remove) -->
-      <!-- <h1 class="result-text">Your result &nbsp; <span class="result">5</span>/10</h1> -->
-    </main>
+    <section class="result-container">
+      <p class="congrats">Congratulations!&#128526;</p>
+      <p class="sorry">Sorry!&#128577;</p>
+      <p class="end-score">Your score is: <span class="final"></span>/10</p>
+    </section>
   </div>
   <script src="javascript/scripts.js">
 
