@@ -74,7 +74,7 @@ body {
 
 .container {
   width: 60%;
-  height: 85vh;
+  height: 95vh;
   padding: 2rem;
   /* box-shadow: 0px 5px 5px 0px #fff; */
   background-color: white;
@@ -145,7 +145,7 @@ body {
 }
 
 .container .main-content .questions .question .choice {
-  width: 30%;
+  width: 70%;
   height: 7vh;
   line-height: 5vh;
   padding: 0 1.5rem;
@@ -166,17 +166,17 @@ body {
   font-weight: bold;
 }
 
-.container .main-content .questions .buttons {
+.container .main-content .buttons {
   width: 100%;
-  height: 2.5rem;
+  height: 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
-  margin-bottom: 3rem;
+  /* margin-bottom: 3rem; */
 }
 
-.container .main-content .questions .buttons button {
+.container .main-content .buttons button {
   position: absolute;
   width: 20%;
   height: 2.5rem;
@@ -193,8 +193,16 @@ body {
   opacity: 0.9;
 }
 
-.container .main-content .questions .buttons button:hover,
-.container .main-content .questions .buttons button:focus {
+.container .main-content .buttons .submit {
+  display: none;
+}
+
+.container .main-content .buttons .next {
+  display: block;
+}
+
+.container .main-content .buttons button:hover,
+.container .main-content .buttons button:focus {
   opacity: 1;
   box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, .2);
 }
@@ -232,4 +240,30 @@ body {
   font-size: larger;
   color: var(--dark-gray);
   font-family: "Poppins", sans-serif;
+}
+
+.container .result-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  color: var(--main-two);
+  gap: 3rem;
+  display: none;
+}
+
+.container .result-container .congrats,
+.container .result-container .sorry {
+  font-size: 5rem;
+}
+
+.container .result-container .end-score {
+  font-size: 2rem;
+}
+
+.container .result-container .end-score .final {
+  color: var(--main-one);
 }
