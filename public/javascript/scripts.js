@@ -39,7 +39,6 @@ const renderQuestions = (array) => {
   });
   const categorySpan = document.querySelector('.header .category-span');
   categorySpan.textContent = array[0].category;
-  console.log(rightAnswers);
 };
 
 const showNextQuestion = (id) => {
@@ -71,14 +70,12 @@ const showNextQuestion = (id) => {
 const selectAnswer = (e) => {
   selectedAnswers.push(e.target.textContent);
   e.target.classList.add('selected');
-  console.log(selectedAnswers);
 };
 
 const countResult = () => {
   let result = 0;
   rightAnswers.slice(1).forEach((answer, ind) => {
     const selected = selectedAnswers.slice(1);
-    console.log(answer, '|||', selected[ind]);
     if (answer === selected[ind]) result += 1;
   });
   return result;
@@ -127,7 +124,6 @@ timer();
 fetch('/questions')
   .then((jsonData) => jsonData.json())
   .then((array) => {
-    console.log(array);
     renderQuestions(array);
   })
   .catch((err) => console.log(err));
